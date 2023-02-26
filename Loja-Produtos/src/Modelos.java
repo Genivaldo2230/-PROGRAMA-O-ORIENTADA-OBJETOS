@@ -1,38 +1,21 @@
-public class Modelos extends Marca{
+public class Modelos {
+    private  String modelo;
+    private String nome;
 
-    public Modelos(String nome, String marca) {
-        super(nome, marca);
+    public Modelos(){
+
+    }
+    public Modelos(String nome, String modelo) {
+        this.nome = nome;
         this.modelo = modelo;
     }
-
-    public Modelos(String modelo) {
-        this.modelo = modelo;
-    }
-
-    private String modelo;
-
-
-
-
-
-    public Modelos() {
-
+    public String getNome() {
+        return nome;
     }
 
     public String getModelo() {
         return modelo;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
