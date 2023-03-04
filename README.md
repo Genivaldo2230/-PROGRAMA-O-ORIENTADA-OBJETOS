@@ -4,7 +4,9 @@ Repositorio de codigos POO
 
 
 {{{{
-      Exercico criação de uma loja aula de POO
+      Exercicio criação de uma loja 
+      
+      aula de POO
 Voce deve construir uma aplicação de uma loja virtual [v]
 
 A loja vende diversos tipos de produtos e todos os produtos possuem nome e preço.[v]
