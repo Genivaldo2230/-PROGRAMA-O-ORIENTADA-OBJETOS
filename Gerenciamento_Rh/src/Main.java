@@ -6,6 +6,7 @@ O cálculo do salário é diferente para cada funcionário:
 - O presidente deve ter adicionado ao salário base o valor da sua cota de ações
  */
 public class Main {
+<<<<<<< HEAD
     public static void main(String[] args) {
 
     }
@@ -41,3 +42,25 @@ public class Main {
 
 
 }
+=======
+
+    public static void main(String[] args) {
+
+        Funcionario funcionario;
+        funcionario = new Funcionario();
+        System.out.println(" funcionario ");
+
+
+        var engenheiro = new Engenheiro();
+        System.out.println(" Engenheiro ");
+
+        var presidente = new Presidente();
+        System.out.println(" Presidente ");
+
+        var gerente = new Gerente();
+        System.out.println(" Gerente ");
+    }
+
+
+}
+>>>>>>> 38bbdcb (criaçã do codigo gerenciamento RH)
