@@ -1,37 +1,25 @@
-public class Marca extends Produtos {
-    private String nome;
+public class Marca {
+
+
+    private String nomeMarca;
     private String marca;
 
-    public Marca(String nome, String marca) {
-        this.nome = nome;
+
+    public Marca(String nomeMarca, String marca) {
+        this.nomeMarca = nomeMarca;
         this.marca = marca;
     }
-
 
     public Marca() {
-        this.nome = nome;
+        this.nomeMarca = nomeMarca;
         this.marca = marca;
     }
 
-    public String getNome() {
-
-        this.nome = nome;
-        return nome;
+    public String getNomeMarca() {
+        return nomeMarca;
     }
 
     public String getMarca() {
-        this.marca = marca;
         return marca;
     }
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -1,17 +1,29 @@
+import java.util.Scanner;
+
 public class Teste {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        var marca = new Marca("SONY", "NOTBOOK");
-        System.out.println(marca.getNome() + " \n" + marca.getMarca());
+        System.out.println("Pesquisa Produto : ");
+        String entrada = sc.nextLine();
 
-        var modelos = new Modelos("Dell", "l340w");
-        System.out.println("Fabricante : " + modelos.getNome() + "\n" + "Modelo : " + modelos.getModelo());
+        var produtos = new Produtos("Fabricante  \n", "\n Modelo / serie");
+        System.out.println(produtos.getProdutos()+ sc.nextLine() + produtos.getNomeProduto()+ sc.nextLine());
 
-        var precos = new Precos(1200, 252, 560);
-        System.out.println("Vendas  a Vistas R$ "+precos.getVendas());
-        System.out.println("Venda Parcelado  R$ "+precos.getVendasParcelada());
+        var marca = new Marca("Nome da Marca", "Marca Fabricante");
+        // var marca = new Marca(" ","Fabricante : ", "Especificação :");
+        System.out.println(marca.getNomeMarca() + sc.nextLine() + " \n" + marca.getMarca() + sc.nextLine());
 
 
+        var modelos = new Modelos("Quantidade");
+        System.out.println("Quantidade n:" + sc.nextLine());
+
+
+        var precos = new Precos(0 + " : Preço", 0 + " : Venda á Avista ", "Valore á Parcelar" + 0);
+        System.out.println(precos.getPreco() + precos.getVendas() + precos.getVendasParcelada());
+
+
+        System.out.println("Venda Parcelado  R$ " + precos);
 
 
     }

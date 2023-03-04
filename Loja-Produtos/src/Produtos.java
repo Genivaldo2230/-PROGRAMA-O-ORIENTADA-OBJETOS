@@ -4,20 +4,25 @@
 
 public class Produtos {
 
-
-    private String nome;
-
-    public String produtos() {
-        this.produtos = produtos;
-        return this.produtos;
-    }
-
     private String produtos;
 
-    public void produtos(String nome) {
-
-        this.nome = nome;
+    public void Produtos(String produtos) {
+        this.produtos = produtos;
     }
+
+    private String nomeProduto;
+    public Produtos(String produtos, String nomeProduto) {
+        this.produtos = produtos;
+        this.nomeProduto = nomeProduto;
+    }
+    public String getProdutos() {
+        return produtos;
+    }
+
+    public String getNomeProduto() {
+        return nomeProduto;
+    }
+
 
 
 }

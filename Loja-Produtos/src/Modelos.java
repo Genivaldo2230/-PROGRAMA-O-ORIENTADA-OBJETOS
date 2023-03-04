@@ -1,21 +1,21 @@
 public class Modelos {
-    private  String modelo;
-    private String nome;
+    private String modelo;
+    private String nomeModelo;
 
-    public Modelos(){
 
+    public Modelos() {
     }
-    public Modelos(String nome, String modelo) {
-        this.nome = nome;
+
+    public Modelos(String modelo) {
         this.modelo = modelo;
     }
-    public String getNome() {
-        return nome;
+
+    public String getNomeModelo() {
+        return nomeModelo;
     }
+
 
     public String getModelo() {
         return modelo;
     }
-
-
 }
