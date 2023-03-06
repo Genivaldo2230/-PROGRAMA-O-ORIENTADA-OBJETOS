@@ -27,9 +27,10 @@ REPOSITORIO : GENECIAMENTO RH
 ======================================================================================
 
 # Exercicio criação de uma loja aula de POO
-REPOSITORIO : Loja - Eletronicos 
+REPOSITORIO : Loja - Produtos 
 
-# Enunciado da Loja 
+# Enunciado da Loja de Pordutos
+
 
 Voce deve construir uma aplicação de uma loja virtual [v]
 
