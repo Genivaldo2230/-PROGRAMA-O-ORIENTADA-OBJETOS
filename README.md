@@ -7,9 +7,9 @@
 
 REPOSITORIO : GENECIAMENTO RH 
 
-ENUNCIADO EM AULA DE ORIENTAÇÃ A OBJETOS DIA 03-03-2023  
-            
-               #   Gestão de RH
+# Enunciado EM AULA DE ORIENTAÇÃ A OBJETOS DIA 03-03-2023  
+ 
+ # GENECIAMENTO de RH
 
   Crie um sistema para controle de funcionários (RH). 
   O sistema deve contemplar as seguintes funcionalidades: 
@@ -26,9 +26,11 @@ ENUNCIADO EM AULA DE ORIENTAÇÃ A OBJETOS DIA 03-03-2023
 - O presidente deve ter adicionado ao salário base o valor da sua cota de ações
 ======================================================================================
 
-      Exercicio criação de uma loja 
-      
-      aula de POO
+# Exercicio criação de uma loja aula de POO
+REPOSITORIO : GENECIAMENTO RH 
+
+# Enunciado da Loja 
+
 Voce deve construir uma aplicação de uma loja virtual [v]
 
 A loja vende diversos tipos de produtos e todos os produtos possuem nome e preço.[v]
