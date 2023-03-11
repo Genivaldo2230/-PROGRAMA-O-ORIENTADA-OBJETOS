@@ -1,33 +1,40 @@
-
-
-// Classe abstrata Funcionario
-public abstract class Funcionario {
-    // Atributos comuns a todos os funcionarios
+public class Funcionario {
+    //Atributos para criação das classetodo funcionario tem
     private int codigo;
     private String nome;
     private double salarioBase;
 
-    // Construtor
+    //Construtor
+
+
     public Funcionario(int codigo, String nome, double salarioBase) {
         this.codigo = codigo;
         this.nome = nome;
         this.salarioBase = salarioBase;
     }
 
-    // Getters e setters
+    public Funcionario() {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.salarioBase = salarioBase;
+    }
+
     public int getCodigo() {
         return codigo;
     }
 
     public void setCodigo(int codigo) {
+
         this.codigo = codigo;
     }
 
     public String getNome() {
+
         return nome;
     }
 
     public void setNome(String nome) {
+
         this.nome = nome;
     }
 
@@ -39,7 +46,8 @@ public abstract class Funcionario {
         this.salarioBase = salarioBase;
     }
 
-    // Metodo abstrato para calcular o salario final de cada funcionario
-    public abstract double calcularSalario();
-
+    public double calcularSalario() //Metodo Abstrato pra calcular o salrio final de cada funcionario
+    {
+        return 0;
+    }
 }

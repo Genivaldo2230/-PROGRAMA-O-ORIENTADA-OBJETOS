@@ -1,27 +1,32 @@
-import java.math.BigDecimal;
-
-// Classe Gerente que herda de Funcionario
-public class Gerente extends Funcionario implements Autenticavel{
-
-    // Atributos especificos do gerente
+<<<<<<< HEAD
+public class Gerente {
+=======
+public class Gerente extends Funcionario{
     private String area;
     private double bonus;
 
-    // Construtor
-    public Gerente(int codigo, String nome, double salarioBase, String area,
-                   double bonus) {
-        super(codigo,nome, (salarioBase)); // Chamando o construtor da classe pai
-        this.area=area;
-        this.bonus=bonus;
+    public Gerente() {
+
     }
 
-    // Getters e setters
+    //Construtor
+    public void gerente() {
+
+    }
+
+    public Gerente(int codigo, String nome, double salarioBase, String area, double bonus) {
+        super();
+        this.area = area;
+        this.bonus = bonus;
+    }
+
+    // GETTERS E SETTERS
     public String getArea() {
         return area;
     }
 
     public void setArea(String area) {
-        this.area=area;
+        this.area = area;
     }
 
     public double getBonus() {
@@ -29,18 +34,14 @@ public class Gerente extends Funcionario implements Autenticavel{
     }
 
     public void setBonus(double bonus) {
-        this.bonus=bonus;
+        this.bonus = bonus;
     }
 
-    // Metodo para calcular o salario final do gerente com adicao do bonus
+    // Nesse metodo pra calcular o bonus do gerente usando @Overrider pra rescrever o salario  acrecenta bonus
+
     @Override
     public double calcularSalario() {
-        return getSalarioBase()+getBonus();
+        return calcularSalario() + getBonus();
     }
-
-    @Override
-    public void autenticar() {
-        System.out.println("Gerente Logado");
-
-    }
+>>>>>>> 38bbdcb (criaçã do codigo gerenciamento RH)
 }
