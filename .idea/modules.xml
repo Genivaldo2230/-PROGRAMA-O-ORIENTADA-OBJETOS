@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Banco/Banco.iml" filepath="$PROJECT_DIR$/Banco/Banco.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Gerenciamento_Rh/Gerenciamento_Rh.iml" filepath="$PROJECT_DIR$/Gerenciamento_Rh/Gerenciamento_Rh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenrenciadoRh/GenrenciadoRh.iml" filepath="$PROJECT_DIR$/GenrenciadoRh/GenrenciadoRh.iml" />
       <module fileurl="file://$PROJECT_DIR$/Loja-Produtos/Loja-Produtos.iml" filepath="$PROJECT_DIR$/Loja-Produtos/Loja-Produtos.iml" />
       <module fileurl="file://$PROJECT_DIR$/PROGRAMA-ORIENTADO-A-OBJETOS.iml" filepath="$PROJECT_DIR$/PROGRAMA-ORIENTADO-A-OBJETOS.iml" />
     </modules>
