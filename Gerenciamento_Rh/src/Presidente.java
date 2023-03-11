@@ -1,32 +1,51 @@
-<<<<<<< HEAD
-public class Presidente {
-=======
-public final class Presidente extends Funcionario {
-    private  double  ValorCotaAcoes;
+// Classe Presidente que herda de Funcionario
 
-    //Construtor
+import java.math.BigDecimal;
+
+public class Presidente extends Funcionario implements Autenticavel{
+
+// Atributos especificos do presidente
+
+    private double valorCotaAcoes;
+
+// Construtor
+
     public Presidente(int codigo, String nome, double salarioBase, double valorCotaAcoes) {
-        super();
-        ValorCotaAcoes = valorCotaAcoes;
+
+        super(codigo, nome, salarioBase); // Chamando o construtor da classe pai
+
+        this.valorCotaAcoes = valorCotaAcoes;
+
     }
 
-    public Presidente() {
-
-    }
-
-    // GETTERS E SETTERS
+// Getters e setters
 
     public double getValorCotaAcoes() {
-        return ValorCotaAcoes;
+
+        return valorCotaAcoes;
+
     }
 
     public void setValorCotaAcoes(double valorCotaAcoes) {
-        ValorCotaAcoes = valorCotaAcoes;
+
+        this.valorCotaAcoes = valorCotaAcoes;
+
+    }
+
+// Metodo para calcular o salario final do presidente com adicao do valor da cota de acoes
+
+
+
+    public double calcularSalario() {
+
+        double getSalario = 0;
+        final var getSalario1 = getSalario;
+        return getSalario;
     }
 
     @Override
-    public double calcularSalario() {
-        return getSalarioBase();
+    public void autenticar() {
+        System.out.println("Presidente Logado");
+
     }
->>>>>>> 38bbdcb (criaçã do codigo gerenciamento RH)
 }

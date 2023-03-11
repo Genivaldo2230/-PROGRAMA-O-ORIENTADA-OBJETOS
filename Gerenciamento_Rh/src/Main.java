@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 /*
 O cálculo do salário é diferente para cada funcionário:
 - Todo funcionário tem um salário base
@@ -6,61 +8,29 @@ O cálculo do salário é diferente para cada funcionário:
 - O presidente deve ter adicionado ao salário base o valor da sua cota de ações
  */
 public class Main {
-<<<<<<< HEAD
     public static void main(String[] args) {
+        Funcionario joao = new Presidente(12,"João",5,10000);
+        joao.calcularSalario();
+        if(joao instanceof Presidente){
+            System.out.println("João é Presidente");
+        }
+        Funcionario pedro = new Engenheiro(22,"Pedro",8000);
+
+        var lucas =new Engenheiro(012,"Guilhemer",1500);
+        System.out.println(lucas.calcularSalario());
+
+        var gabriel =new Gerente(11,"Pedro",10000,"Comercial",5600);
+        System.out.println(pedro.calcularSalario());
+
+        var paulo = new Presidente(01,"Genivaldo",14500,6500);
+        System.out.println(paulo.calcularSalario());
+
+        var folhaDePagamneto = new FolhaDePagamento();
+        folhaDePagamneto.registrar(paulo);
+        folhaDePagamneto.login(paulo);
+        folhaDePagamneto.login(gabriel);
+        folhaDePagamneto.login(new Auditor());
+        System.out.println(folhaDePagamneto.getTotalDaFolhaDePagamento());
 
     }
-    private String funcionario; //- Funcionário: possui código e nome (abstrato)
-    private int codigo;
-
-
-    public Main(String funcionario, int codigo) {
-        this.funcionario = funcionario;
-        this.codigo = codigo;
-    }
-
-    public String getFuncionario() {
-        return funcionario;
-    }
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-
-
-
-    public int getCota() {
-        return cota;
-    }
-
-
-
-
-
-    private int cota;
-
-
 }
-=======
-
-    public static void main(String[] args) {
-
-        Funcionario funcionario;
-        funcionario = new Funcionario();
-        System.out.println(" funcionario ");
-
-
-        var engenheiro = new Engenheiro();
-        System.out.println(" Engenheiro ");
-
-        var presidente = new Presidente();
-        System.out.println(" Presidente ");
-
-        var gerente = new Gerente();
-        System.out.println(" Gerente ");
-    }
-
-
-}
->>>>>>> 38bbdcb (criaçã do codigo gerenciamento RH)

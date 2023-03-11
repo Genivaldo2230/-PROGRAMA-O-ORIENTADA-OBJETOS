@@ -1,30 +1,25 @@
-<<<<<<< HEAD
-public class Engenheiro {
-=======
+// Classe Engenheiro que herda de Funcionario
 public class Engenheiro extends Funcionario {
-    private String departamento;
+
+    // Atributos especificos do engenheiro
+    private Departamento departamento;
     private String crea;
 
-    public Engenheiro() {
-        super();
-    }
 
-    //constritor
-    public void Engenheiro() {
 
-    }
-
-    public Engenheiro(int codigo, String nome, double salarioBase, String departamento, String crea) {
-        super();
+    // Construtor
+    public Engenheiro(int codigo, String nome, double salarioBase) {
+        super(codigo, nome, salarioBase); // Chamando o construtor da classe pai
         this.departamento = departamento;
         this.crea = crea;
     }
 
-    public String getDepartamento() {
+    // Getters e setters
+    public Departamento getDepartamento() {
         return departamento;
     }
 
-    public void setDepartamento(String departamento) {
+    public void setDepartamento(Departamento departamento) {
         this.departamento = departamento;
     }
 
@@ -36,10 +31,9 @@ public class Engenheiro extends Funcionario {
         this.crea = crea;
     }
 
-    // Nesse metodo estou calculando o salario do Engenheiro com acreciom de 50% usando  pra reescrever o @Override
+    // Metodo para calcular o salario final do engenheiro com adicional de 50%
     @Override
     public double calcularSalario() {
         return getSalarioBase() * 1.5;
     }
->>>>>>> 38bbdcb (criaçã do codigo gerenciamento RH)
 }
